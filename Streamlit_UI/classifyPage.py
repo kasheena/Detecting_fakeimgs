@@ -3,7 +3,6 @@ import util
 
 def app():
     st.write("Upload a Picture to see if it is a fake or real face.")
-    st.markdown('*Need a face to test? Visit this [link]("https://github.com/kanakmi/Deforgify/tree/main/Model%20Training/dataset")*')
     file_uploaded = st.file_uploader("Choose the Image File", type=["jpg", "png", "jpeg"])
     if file_uploaded is not None:
         res = util.classify_image(file_uploaded)
