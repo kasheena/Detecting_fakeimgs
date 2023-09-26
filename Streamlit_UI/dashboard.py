@@ -6,8 +6,7 @@ def app():
     st.subheader("💡 Ideation:")
 
     inspiration = '''
-    Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images
-    '''
+    Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images.'''
 
     st.subheader("👨🏻‍💻 Abstract")
 
