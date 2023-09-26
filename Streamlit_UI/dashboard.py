@@ -2,23 +2,18 @@ import streamlit as st
 import plotly.express as px
 
 def app():
-    st.image('./Streamlit_UI/Header.gif', use_column_width=True)
 
-    st.subheader("💡 Abstract:")
+    st.subheader("💡 Ideation:")
 
     inspiration = '''
-    Deep learning has had a lot of success with Generative Adversarial Networks (GANs) in recent times which are used to generate high-quality outputs that are comparable to the original inputs. GANs have been widely utilised to create new realistic pictures and to improve existing ones. On the other hand, GANs may be used to fool individuals by generating false data. Fake faces made by GANs, for example, may deceive not only humans but also machine learning classifiers. Synthetic photographs for identification and authentication purposes, for example, can be used maliciously.
-    
-    Furthermore, advanced picture editing software such as Adobe Photoshop allows for the alteration of complicated input photographs as well as the creation of high-quality new images. These techniques have improved to the point that they can now build realistic and intricate false pictures that are difficult to distinguish from the genuine thing. YouTube has step-by-step directions and tutorials for making these sorts of fictitious graphics. As a result, these technologies have the potential to be utilised for defamation, impersonation, and factual distortion. Furthermore, with social media, fraudulent material may be swiftly and extensively shared on the Internet.
+    Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images
     '''
 
-    st.write(inspiration)
-
-    st.subheader("👨🏻‍💻 What our Project Does?")
+    st.subheader("👨🏻‍💻 Abstract")
 
     what_it_does = '''
-    Deforgify is a tool that utilizes the power of Deep Learning to distinguish Real images from the Fake ones. For instance, if someone takes your original image and inserts your face into a murder scene or photoshops it onto someone else's body, Deforgify will tag it as fake reducing the chances of it being used to smear you. <br>
-    Simply submit the image, and the machine learning model will evaluate it and provide a response in a fraction of a second.'''
+    This study addresses the urgent need for an advanced image authenticity verification system in journalism and content curation. It proposes a comprehensive solution that leverages deep learning
+    techniques, specifically convolutional neural networks, and generative adversarial networks, to enhance image authenticity verification. By drawing insights from seminal works in the field, this research aims to combat the proliferation of fake images, ultimately contributing to the preservation of credibility and trustworthiness in media content dissemination.'''
 
     st.markdown(what_it_does, unsafe_allow_html=True)
 
@@ -52,11 +47,8 @@ def app():
 - The first layer started with 32 filters and kernel of 2x2.
 - The number of filters are doubled at every next layer and kernel is is incremented by 1.
 - We introduced some Max Pooling Layers after Convolutional Layers to avoid over-fitting and reduce Computational Costs.
-- The Output from Covolutional Layer is Flattened and passed over to Dense Layers.
-- We started with 512 neurons in the first Dense layer and reduced them to half over the next two Dense layers.
-- Some Dropout Layers were also introduced throught the model to randomly ignore some of the neurons and reduce over-fitting.
 - We used ReLU activation in all layers except output layer to reduce computation cost and introduce non-linearity.
-- Finally the Output Layer was constructed containing 2 neurons (1 for each class) and softmax activation.
+- Finally, the Output Layer contained 2 neurons (1 for each class) and softmax activation.
 '''
     st.write(ml_process)
 
@@ -69,7 +61,7 @@ def app():
     loss.image('./Streamlit_UI/loss.png', use_column_width=True)
     acc.image('./Streamlit_UI/accuracy.png', use_column_width=True)
 
-    st.subheader("📈 Results")
+    st.subheader("📈 Evaluation")
     st.markdown(results, unsafe_allow_html=True)
 
     st.write("Classification Report:")
@@ -87,7 +79,5 @@ weighted avg       1.00      1.00      1.00       129
     st.code(cfr)
 
     st.write(" ")
-
-    st.write("*Try it out now by clicking on Classify Image button on the Sidebar*")
 
     
