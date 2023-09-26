@@ -12,9 +12,9 @@ PAGES = {
     "Classify Image": classifyPage
 }
 
-st.sidebar.title("Deforgify")
+st.sidebar.title("Ideation")
 
-st.sidebar.write("Deforgify is a tool that utilizes the power of Deep Learning to distinguish Real images from the Fake ones.")
+st.sidebar.write("Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images")
 
 st.sidebar.subheader('Navigation:')
 selection = st.sidebar.radio("", list(PAGES.keys()))
