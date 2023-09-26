@@ -2,12 +2,6 @@ import streamlit as st
 import plotly.express as px
 
 def app():
-
-    st.subheader("💡 Ideation:")
-
-    inspiration = '''
-    Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images.'''
-
     st.subheader("👨🏻‍💻 Abstract")
 
     what_it_does = '''
