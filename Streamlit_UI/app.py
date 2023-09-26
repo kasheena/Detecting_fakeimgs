@@ -12,10 +12,15 @@ PAGES = {
     "Classify Image": classifyPage
 }
 
-st.sidebar.title("Ideation")
+st.sidebar.title("💡 Ideation")
 
 st.sidebar.write("Enhancing Image Authenticity Verification through Deep Learning Techniques: A Study on the Detection and Mitigation of Fake Images")
 
+st.sidebar.title(" Team Members:")
+st.sidebar.write(" Kasheena Mulla
+                 Shruti Kharche
+                 Pratichee Mishra")
+                 
 st.sidebar.subheader('Navigation:')
 selection = st.sidebar.radio("", list(PAGES.keys()))
 
